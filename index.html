@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#">PhimPal</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Tìm kiếm</a></li>
+                <li><a href="#">Phim Hot</a></li>
+                <li><a href="#">Phim Lẻ</a></li>
+                <li><a href="#">Phim Bộ</a></li>
+                <li><a href="#">Phim Mới</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile">
+            <ul>
+                <li>
+                    <a href="#">PS38519_Trần Lê Hải Long</a>
+                </li>
+            </ul> 
+        </div>
+    </header>
+
+    <div class="image-banner">
+        <img src="IMG/OIP (1).jfif" alt="Banner Image">
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-content">
+        <!-- Left Sidebar -->
+        <!-- <aside class="sidebar left-sidebar">
+            <p>Left Sidebar Content</p>
+        </aside> -->
+
+        <!-- Movie Content -->
+        <div class="movie-section">
+            <!-- Filter Section -->
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="movie-type">Loại phim:</label>
+                    <select id="movie-type">
+                        <option>- Tất cả -</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="genre">Thể loại:</label>
+                    <select id="genre">
+                        <option>- Tất cả -</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="country">Quốc gia:</label>
+                    <select id="country">
+                        <option>- Tất cả -</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="year">Năm:</label>
+                    <select id="year">
+                        <option>- Tất cả -</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="duration">Thời lượng:</label>
+                    <select id="duration">
+                        <option>- Tất cả -</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sắp xếp:</label>
+                    <select id="sort">
+                        <option>Ngày cập nhật</option>
+                    </select>
+                </div>
+            </div>
+            
+
+            <!-- Heading for Suggested Movies -->
+            <div class="section-heading">
+                <h2>PHIM ĐỀ CỬ</h2>
+            </div>
+            <!-- Movie Grid for Suggested Movies -->
+            <div class="movie-grid">
+                <div class="movie-item">
+                    <img src="IMG/1tfCj5h0FEQ5xg8hzVjQgcuGlgN.jpg" alt="Agatha All Along">
+                    <h3>Agatha All Along</h3>
+                    <p>Agatha All Along</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/lordofthering.jpg" alt="The Rings of Power">
+                    <h3>The Lord Of The Ring: The Rings of Power</h3>
+                    <p>Chúa tể những chiếc nhẫn</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/doremon.jpg" alt="Doraemon the Movie: Nobita's Earth Symphony">
+                    <h3>Doraemon the Movie: Nobita's Earth Symphony</h3>
+                    <p>Doraemon: Nobita và bản giao hưởng Địa Cầu</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/insideout.jpg" alt="Inside Out 2">
+                    <h3>Inside Out 2</h3>
+                    <p>Những mảnh ghép cảm xúc 2</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/handsome.jpg" alt="Handsome Guys">
+                    <h3>Handsome Guys</h3>
+                    <p>Đẹp Trai Thấy Sai Sai</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/handsome.jpg" alt="Handsome Guys">
+                    <h3>Handsome Guys</h3>
+                    <p>Đẹp Trai Thấy Sai Sai</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/handsome.jpg" alt="Handsome Guys">
+                    <h3>Handsome Guys</h3>
+                    <p>Đẹp Trai Thấy Sai Sai</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/handsome.jpg" alt="Handsome Guys">
+                    <h3>Handsome Guys</h3>
+                    <p>Đẹp Trai Thấy Sai Sai</p>
+                </div>
+            </div>
+
+            <!-- Heading for New Series -->
+            <div class="section-heading">
+                <h2>PHIM BỘ MỚI CẬP NHẬT</h2>
+            </div>
+            <!-- Movie Grid for New Series -->
+            <div class="movie-grid">
+                <div class="movie-item">
+                    <img src="IMG/op.jpg" alt="One Piece">
+                    <h3>One Piece</h3>
+                    <p>Đảo Hải Tặc / Vua Hải Tặc</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/alya.jpg" alt="Alya Sometimes Hides Her Feelings in Russian">
+                    <h3>Alya Sometimes Hides Her Feelings in Russian</h3>
+                    <p>Arya bàn bên thỉnh thoảng lại trêu ghẹo tôi bằng tiếng Nga</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/boku.jpg" alt="My Hero Academia">
+                    <h3>My Hero Academia</h3>
+                    <p>Học viện siêu anh hùng</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/a2.jpg" alt="NieR:Automata Ver1.1a">
+                    <h3>NieR:Automata Ver1.1a</h3>
+                    <p>Giải Cứu Địa Cầu</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/bluehair.jpg" alt="Makeine: Too Many Losing Heroines!">
+                    <h3>Makeine: Too Many Losing Heroines!</h3>
+                    <p>Có quá nhiều nữ chính thua cuộc!</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/handsome.jpg" alt="Handsome Guys">
+                    <h3>Handsome Guys</h3>
+                    <p>Đẹp Trai Thấy Sai Sai</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/handsome.jpg" alt="Handsome Guys">
+                    <h3>Handsome Guys</h3>
+                    <p>Đẹp Trai Thấy Sai Sai</p>
+                </div>
+                <div class="movie-item">
+                    <img src="IMG/handsome.jpg" alt="Handsome Guys">
+                    <h3>Handsome Guys</h3>
+                    <p>Đẹp Trai Thấy Sai Sai</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar
+        <aside class="sidebar right-sidebar">
+            <p>Right Sidebar Content</p>
+        </aside> -->
+    </div>
+
+    <footer>
+        <p>© 2024 PhimPal Clone - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -222,3 +222,8 @@ footer {
     height: 100%;
     object-fit: cover; /* Ensures the image scales and covers the entire div */
 }
+
+.fb-like{
+    margin-left: 10%;
+    color: #06121e;
+}

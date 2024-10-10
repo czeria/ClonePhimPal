@@ -13,16 +13,22 @@ body {
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
+    z-index: 2;
 }
 
 header {
-    background-color: #1b2836;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: relative;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 3;
 }
+
 
 .logo {
     margin-right: 40px;
@@ -81,7 +87,9 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     margin: 20px;
+    margin-top: -27%;
     padding: 3rem;
+    z-index: 2;
 }
 
 /* Sidebar Styles */
@@ -111,6 +119,7 @@ nav ul li a:hover {
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
+    z-index: 2;
 }
 
 /* Filters Section */
@@ -186,6 +195,7 @@ nav ul li a:hover {
 
 .movie-item:hover {
     transform: scale(1.05);
+    
 }
 
 .movie-item img {
@@ -203,26 +213,99 @@ nav ul li a:hover {
     color: #aaa;
 }
 
-/* Footer */
-footer {
-    background-color: #1b2836;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
 
 .image-banner {
-    width: 100%;
-    height: 200px; /* Twice the header height */
-    overflow: hidden;
+    position: relative; /* Needed for absolute positioning of the overlay */
+    height: 50vh; /* Set height to 50% of the viewport height */
+    overflow: hidden; /* Hide overflow from the video */
 }
+
+.background-video {
+    position: absolute; /* Position the video absolutely */
+    top: 50%; /* Center the video vertically */
+    left: 50%; /* Center the video horizontally */
+    min-width: 100%; /* Minimum width of the video */
+    min-height: 100%; /* Minimum height of the video */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    transform: translate(-50%, -50%); /* Center the video */
+    z-index: 1; /* Place the video behind the overlay */
+    opacity: 0.3; /* Set video transparency to 30% (70% transparent) */
+}
+
+
+
+.content {
+    position: relative; /* Position relative to allow stacking */
+    z-index: 3; /* Ensure text is above the overlay */
+    color: white; /* Text color for visibility */
+    text-align: center; /* Center the text */
+}
+
+
 
 .image-banner img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensures the image scales and covers the entire div */
 }
 
 .fb-like{
     margin-left: 10%;
 }
+
+
+
+
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+/* Footer */
+footer {
+    background-color: #1b2836;
+    text-align: center;
+    padding: 3rem 1.5rem 6rem;
+    margin-top: 40px;
+    background: url(IMG/footer-bg.jpg);
+    background-image: url(IMG/footer-bg.jpg);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+    
+
+.container {
+    max-width: 100%;
+    margin-left: 10%;
+    padding: 0px;
+    text-align: justify;
+} 
+footer li::before {
+    position: absolute;
+    left: 0;
+}
+
+footer li{
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+footer ul{
+    margin: 2em;
+    list-style-type: circle;
+}
+
+footer a{
+    text-decoration: none;
+    color: #00aced;
+}
+

@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Page Clone</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scroll.js" defer></script>
 </head>
 <body>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0&appId=9297821360234853"></script>
 
     <!-- Header -->
-    <header>
+    <header id="main-header">
         <div class="logo">
-            <a href="#">PhimPal</a>
+            <a href="index.html">PhimPal</a>
         </div>
         <nav>
             <ul>
@@ -28,15 +29,23 @@
         <div class="user-profile">
             <ul>
                 <li>
-                    <a href="#">PS38519_Trần Lê Hải Long</a>
+                    <a href="login.html">PS38519_Trần Lê Hải Long</a>
                 </li>
             </ul> 
         </div>
     </header>
 
     <div class="image-banner">
-        <img src="IMG/OIP (1).jfif" alt="Banner Image">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="IMG/y2mate.com - Kitachan Omurice Magic Spell_1080.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <!-- You can add any content here, like text or buttons -->
+            <h1></h1>
+        </div>
     </div>
+    
 
     <!-- Main Section -->
     <div class="main-content">
@@ -95,7 +104,9 @@
             <!-- Movie Grid for Suggested Movies -->
             <div class="movie-grid">
                 <div class="movie-item">
+                    <a href="movie.html">
                     <img src="IMG/1tfCj5h0FEQ5xg8hzVjQgcuGlgN.jpg" alt="Agatha All Along">
+                    </a>
                     <h3>Agatha All Along</h3>
                     <p>Agatha All Along</p>
                 </div>
@@ -191,10 +202,36 @@
         </aside> -->
         
     </div>
+    
     <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100068120733245" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
 
     <footer>
-        <p>© 2024 PhimPal Clone - All Rights Reserved</p>
+        <div class="container">
+            <h3 class="title is-6">Phim chất lượng cao online của
+            <a href="/index.html">XemPhim</a>
+                khác gì so với các trang phim khác
+            </h3>
+            <ul class="has-text=grey-light">
+                <li>
+                    Là phim bluray (reencoded), có độ phân giải thấp nhất là Full HD (1080p), trong khi hầu hết các trang phim khác chỉ có tới độ phân giải HD (720p) là cao nhất
+                </li>
+                <li>
+                    Chất lượng cao, lượng dữ liệu trên giây (bitrate) gấp từ 5 - 10 lần phim online thông thường - đây là yếu tố quyết định độ nét của phim (thậm chí còn quan trọng hơn độ phân giải)
+                </li>
+                <li>
+                    Âm thanh 5.1 (6 channel) thay vì stereo (2 channel) như các trang phim khác (kể cả Youtube)
+                </li>
+                <li>
+                    Phù hợp để xem trên màn hình TV, máy tính, laptop có độ phân giải cao
+                </li>
+                <li>
+                    Nếu không hài lòng với phụ đề có sẵn, bạn có thể tự upload phụ đề của riêng mình để xem online
+                </li>
+                <li>
+                    Có lựa chọn hiện phụ đề song ngữ (tức hiện đồng thời cả tiếng Anh & tiếng Việt), phù hợp với những người muốn học tiếng Anh qua phụ đề phim
+                </li>
+            </ul>
+        </div>
     </footer>
 
 </body>

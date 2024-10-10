@@ -4,7 +4,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     transition: background-color 0.3s ease;
@@ -241,7 +241,7 @@ body {
 }
 
 .hero-section {
-    height: 50vh;
+    height: 65vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
     url(IMG/7VQGc2NEAmmvUEDEkRqi7c9E3vu.jpg);
     background-position: center;

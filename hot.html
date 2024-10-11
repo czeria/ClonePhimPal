@@ -6,7 +6,8 @@
     <title>Document</title>
     <script src="scroll.js" defer></script>
     <link rel="stylesheet" href="hot.css">
-</head>
+    
+  </head>
 <body>
     <header id="main-header">
         <div class="logo">
@@ -15,10 +16,10 @@
         <nav>
             <ul>
                 <li><a href="search.html">Tìm kiếm</a></li>
-                <li><a href="#">Phim Hot</a></li>
-                <li><a href="#">Phim Lẻ</a></li>
-                <li><a href="#">Phim Bộ</a></li>
-                <li><a href="#">Phim Mới</a></li>
+                <li><a href="hot.html">Phim Hot</a></li>
+                <li><a href="odd.html">Phim Lẻ</a></li>
+                <li><a href="drama.html">Phim Bộ</a></li>
+                <li><a href="new.html">Phim Mới</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </nav>
@@ -32,73 +33,125 @@
     </header>
 
     <!-- Movie Section -->
-    <section class="movie-section">
-        <h2>Top phim được xem nhiều nhất</h2>
-        <div class="tabs">
-            <button class="tab-button active">Ngày</button>
-            <button class="tab-button">Tuần</button>
-            <button class="tab-button">Tháng</button>
-        </div>
+    <div class="container">
+        <section class="movie-section">
+            <h2>Top phim được xem nhiều nhất</h2>
+            <div style="text-align: center;">
+                <div class="tabs">
+                    <button class="tab-button active">NGÀY</button>
+                    <button class="tab-button">TUẦN</button>
+                    <button class="tab-button">THÁNG</button>
+                </div>
+            </div>
+            <script>
+                // Get all tab buttons
+                const tabs = document.querySelectorAll('.tab-button');
         
-        <!-- Movie Grid -->
-        <div class="movie-grid">
-            <!-- Movie Card 1 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="Agatha All Along">
-                <p class="movie-title">Agatha All Along</p>
-            </div>
-            <!-- Movie Card 2 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="Deadpool & Wolverine">
-                <p class="movie-title">Deadpool & Wolverine</p>
-            </div>
-            <!-- Movie Card 3 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="The Platform 2">
-                <p class="movie-title">The Platform 2</p>
-            </div>
-            <!-- Add more movie cards as needed -->
-             <!-- Movie Card 3 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="The Platform 2">
-                <p class="movie-title">The Platform 2</p>
-            </div>
-            <!-- Movie Card 3 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="The Platform 2">
-                <p class="movie-title">The Platform 2</p>
-            </div>
-        </div>
+                // Loop through the buttons and add a click event listener
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', function() {
+                        // Remove 'active' class from all buttons
+                        tabs.forEach(btn => btn.classList.remove('active'));
+        
+                        // Add 'active' class to the clicked button
+                        this.classList.add('active');
+                    });
+                });
+            </script>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <a href="movie.html">
+                    <img src="IMG/1tfCj5h0FEQ5xg8hzVjQgcuGlgN.jpg" alt="Agatha All Along">
+                    </a>
+                    <div class="movie-title">Agatha All Along</div>
+                    <div class="movie-subtitle">Agatha All Along</div>
+                    
+                </div>
+                <div class="movie-card">
+                    <a href="movie.html">
+                    <img src="IMG/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool và Wolverine">
+                    </a>
+                    <div class="movie-title">Deadpool và Wolverine</div>
+                    <div class="movie-subtitle">Deadpool & Wolverine</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/izuzUb0sDokqp9o8utVfsrSJuy5.jpg" alt="Hố sâu đói khát 2">
+                    <div class="movie-title">Hố sâu đói khát 2</div>
+                    <div class="movie-subtitle">The Platform 2</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/gjyqQD5LsNOiVIXuczw9joqjiKQ.jpg" alt="Được ăn cả ngã về không">
+                    <div class="movie-title">Được ăn cả ngã về không</div>
+                    <div class="movie-subtitle">No More Bets</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/4bKlTeOUr5AKrLky8mwWvlQqyVd.jpg" alt="Trò chơi sát thủ">
+                    <div class="movie-title">Trò chơi sát thủ</div>
+                    <div class="movie-subtitle">The Killer's Game</div>
+                </div>
 
-        <div class="movie-grid">
-            <!-- Movie Card 1 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="Agatha All Along">
-                <p class="movie-title">Agatha All Along</p>
+                <!-- Add more movie cards as needed -->
             </div>
-            <!-- Movie Card 2 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="Deadpool & Wolverine">
-                <p class="movie-title">Deadpool & Wolverine</p>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="IMG/1tfCj5h0FEQ5xg8hzVjQgcuGlgN.jpg" alt="Agatha All Along">
+                    <div class="movie-title">Agatha All Along</div>
+                    <div class="movie-subtitle">Agatha All Along</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool và Wolverine">
+                    <div class="movie-title">Deadpool và Wolverine</div>
+                    <div class="movie-subtitle">Deadpool & Wolverine</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/izuzUb0sDokqp9o8utVfsrSJuy5.jpg" alt="Hố sâu đói khát 2">
+                    <div class="movie-title">Hố sâu đói khát 2</div>
+                    <div class="movie-subtitle">The Platform 2</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/gjyqQD5LsNOiVIXuczw9joqjiKQ.jpg" alt="Được ăn cả ngã về không">
+                    <div class="movie-title">Được ăn cả ngã về không</div>
+                    <div class="movie-subtitle">No More Bets</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/4bKlTeOUr5AKrLky8mwWvlQqyVd.jpg" alt="Trò chơi sát thủ">
+                    <div class="movie-title">Trò chơi sát thủ</div>
+                    <div class="movie-subtitle">The Killer's Game</div>
+                </div>
+                
+                <!-- Add more movie cards as needed -->
             </div>
-            <!-- Movie Card 3 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="The Platform 2">
-                <p class="movie-title">The Platform 2</p>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <img src="IMG/1tfCj5h0FEQ5xg8hzVjQgcuGlgN.jpg" alt="Agatha All Along">
+                    <div class="movie-title">Agatha All Along</div>
+                    <div class="movie-subtitle">Agatha All Along</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool và Wolverine">
+                    <div class="movie-title">Deadpool và Wolverine</div>
+                    <div class="movie-subtitle">Deadpool & Wolverine</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/izuzUb0sDokqp9o8utVfsrSJuy5.jpg" alt="Hố sâu đói khát 2">
+                    <div class="movie-title">Hố sâu đói khát 2</div>
+                    <div class="movie-subtitle">The Platform 2</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/gjyqQD5LsNOiVIXuczw9joqjiKQ.jpg" alt="Được ăn cả ngã về không">
+                    <div class="movie-title">Được ăn cả ngã về không</div>
+                    <div class="movie-subtitle">No More Bets</div>
+                </div>
+                <div class="movie-card">
+                    <img src="IMG/4bKlTeOUr5AKrLky8mwWvlQqyVd.jpg" alt="Trò chơi sát thủ">
+                    <div class="movie-title">Trò chơi sát thủ</div>
+                    <div class="movie-subtitle">The Killer's Game</div>
+                </div>
+                
+                <!-- Add more movie cards as needed -->
             </div>
-            <!-- Add more movie cards as needed -->
-             <!-- Movie Card 3 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="The Platform 2">
-                <p class="movie-title">The Platform 2</p>
-            </div>
-            <!-- Movie Card 3 -->
-            <div class="movie-card">
-                <img src="https://via.placeholder.com/150" alt="The Platform 2">
-                <p class="movie-title">The Platform 2</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer>
         <div class="container">

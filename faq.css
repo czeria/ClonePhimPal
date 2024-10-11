@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #06121e;
+    color: #fff;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    z-index: 2;
+}
+
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    z-index: 3;
+}
+
+
+.logo {
+    margin-right: 40px;
+}
+
+.logo a {
+    font-size: 24px;
+    color: #00aced;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #00aced;
+}
+
+/* User profile positioned to the right */
+.user-profile {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile ul li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.user-profile ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.user-profile ul li a:hover {
+    color: #00aced;
+}
+
+footer {
+    background-color: #1b2836;
+    text-align: center;
+    padding: 3rem 1.5rem 6rem;
+    margin-top: 40px;
+    background: url(IMG/footer-bg.jpg);
+    background-image: url(IMG/footer-bg.jpg);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+    
+
+.container {
+    max-width: 100%;
+    margin-left: 10%;
+    padding: 0px;
+    text-align: justify;
+} 
+footer li::before {
+    position: absolute;
+    left: 0;
+}
+
+footer li{
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+footer ul{
+    margin: 2em;
+    list-style-type: circle;
+}
+
+footer a{
+    text-decoration: none;
+    color: #00aced;
+}
+
+.faq-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0c1622;
+    color: #fff;
+  }
+  
+  .faq-section h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .faq-item {
+    margin-bottom: 40px;
+  }
+  
+  .faq-item h3 {
+    color: #f7d456;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item p, .faq-item ul {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  
+  .faq-item ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .faq-item ul li {
+    margin-bottom: 10px;
+  }
+  
+  .faq-item a {
+    color: #00a2e8;
+    text-decoration: none;
+  }
+  
+  .faq-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faq-section {
+      width: 90%;
+    }
+  
+    .faq-section h2 {
+      font-size: 24px;
+    }
+  
+    .faq-item h3 {
+      font-size: 20px;
+    }
+  
+    .faq-item p, .faq-item ul {
+      font-size: 14px;
+    }
+  }

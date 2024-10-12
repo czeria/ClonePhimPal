@@ -5,14 +5,15 @@
 }
 
 body {
-    font-family:  BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    background-color: #06121e;
-    color: #fff;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: rgb(14, 46, 66);
     color: #fff;
     font-size: 1em;
     font-weight: 400;
     line-height: 1.5;
-    z-index: 2;
+    display: flex;
+    flex-direction: column; /* Makes the page a flex container */
+    min-height: 100vh; /* Ensures the body takes full height */
 }
 
 header {
@@ -27,7 +28,6 @@ header {
     transition: background-color 0.3s ease;
     z-index: 3;
 }
-
 
 .logo {
     margin-right: 40px;
@@ -81,48 +81,42 @@ nav ul li a:hover {
     color: #00aced;
 }
 
-footer {
-    background-color: #1b2836;
-    text-align: center;
-    padding: 3rem 1.5rem 6rem;
-    margin-top: 40px;
-    background: url(IMG/footer-bg.jpg);
-    background-image: url(IMG/footer-bg.jpg);
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-}
-    
-
+/* Main content container to fill the remaining space */
 .container {
     max-width: 100%;
     margin-left: 10%;
     padding: 0px;
     text-align: justify;
-} 
+    flex: 1; /* Ensures the container fills remaining space */
+}
+
+footer {
+    background-color: #1b2836;
+    text-align: center;
+    padding: 3rem 1.5rem 6rem;
+    margin-top: auto; /* Pushes footer to the bottom */
+    background: url(IMG/footer-bg.jpg);
+    background-size: cover;
+}
+
 footer li::before {
     position: absolute;
     left: 0;
 }
 
-footer li{
+footer li {
     position: relative;
     padding-left: 0px;
     margin-bottom: 15px;
     line-height: 1.4;
 }
 
-footer ul{
+footer ul {
     margin: 2em;
     list-style-type: circle;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #00aced;
 }
@@ -131,13 +125,13 @@ footer a{
 .search-section {
     display: flex;
     justify-content: center;
-    padding: 130px 0;
-  }
+    padding: 130px;
+}
   
-  .search-input {
+.search-input {
     width: 90%;
     padding: 10px;
     font-size: 50px;
     border: 2px solid #ccc;
     border-radius: 6px;
-  }
+}

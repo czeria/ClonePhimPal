@@ -6,7 +6,7 @@
 
 body {
     font-family:  BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    background-color: #06121e;
+    background-color: rgb(14, 46, 66);
     color: #fff;
     color: #fff;
     font-size: 1em;
@@ -131,7 +131,7 @@ footer a{
     width: 70%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #0c1622;
+    background-color: rgb(14, 46, 66);
     color: #fff;
   }
   
